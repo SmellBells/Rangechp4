@@ -1,0 +1,19 @@
+<script type="text/javascript">
+function range(num1, num2){
+	var maxNum;
+	var lowNum;
+	var rangeCon = [];
+	if(num1 > num2){
+			maxNum = num1; 
+			lowNum = num2;
+		else {
+			maxNum = num2;
+			lowNum = num1;
+		}
+	}
+	for(i = lowNum; i < maxNum; i++){
+		rangeCon.push(i);
+	}
+	return rangeCon;
+}	
+</script>
