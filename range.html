@@ -2,6 +2,7 @@
 function range(num1, num2){
 	var maxNum;
 	var lowNum;
+	var addSum = 0;
 	var rangeCon = [];
 	if(num1 > num2){
 			maxNum = num1; 
@@ -13,7 +14,8 @@ function range(num1, num2){
 	}
 	for(i = lowNum; i < maxNum; i++){
 		rangeCon.push(i);
+		addSum += rangeCon[i];
 	}
-	return rangeCon;
+	return addSum;
 }	
 </script>
